@@ -1,0 +1,53 @@
+@import "../../App.scss";
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//ui bottom
+.navbar-bottom {
+  position: fixed;
+  bottom: 0;
+  /*   left: 0;
+  right: 0; */
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+}
+.navtab {
+  background-color: black;
+  margin: 2px;
+}
+.navicon {
+  width: 7.5vh;
+  height: 7.5vh;
+}
+//ui top
+.navtablong {
+  width: 12vh;
+  height: 5vh;
+}
+.viewicon {
+  width: 5vh;
+  height: 5vh;
+}
+.gemview {
+  /*   width: 5vh;
+  height: 5vh; */
+  background-color: red;
+}
+.goldview {
+  /*   width: 5vh;
+  height: 5vh; */
+  background-color: gold;
+}
+.navbar-top {
+  position: fixed;
+  top: 0;
+  /* left: 0;
+  right: 0; */
+  display: flex;
+  flex-direction: row;
+  margin: 2px;
+}

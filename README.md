@@ -1,2 +1,0 @@
-# idlegame
-idlegame with React
