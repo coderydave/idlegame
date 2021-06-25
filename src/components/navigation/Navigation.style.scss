@@ -15,33 +15,6 @@
   flex-direction: row;
   margin: 2px;
 }
-.navtab {
-  background-color: black;
-  margin: 2px;
-}
-.navicon {
-  width: 7.5vh;
-  height: 7.5vh;
-}
-//ui top
-.navtablong {
-  width: 12vh;
-  height: 5vh;
-}
-.viewicon {
-  width: 5vh;
-  height: 5vh;
-}
-.gemview {
-  /*   width: 5vh;
-  height: 5vh; */
-  background-color: red;
-}
-.goldview {
-  /*   width: 5vh;
-  height: 5vh; */
-  background-color: gold;
-}
 .navbar-top {
   position: fixed;
   top: 0;
@@ -50,4 +23,45 @@
   display: flex;
   flex-direction: row;
   margin: 2px;
+}
+.navtab-top {
+  background-color: black;
+  border-radius: 5px;
+  margin: 1px;
+}
+.navtab-bottom {
+  background-color: black;
+  border-radius: 5px;
+}
+.navicon-top {
+  min-width: 7vh;
+  min-height: 7vh;
+}
+.navicon-bottom {
+  width: calc(100vw / 6.5);
+  min-height: 7.2vh;
+}
+//ui top
+.navtablong {
+  width: calc(100vw / 3.1 - 1.1vh);
+  /*  min-width: 12vh; */
+  min-height: 5vh;
+}
+.viewicon {
+  width: calc(100vw / 3.1 - 1vh);
+  /* min-width: 5vh; */
+  height: 5vh;
+}
+
+.gemview {
+  /*   width: 5vh;
+  height: 5vh; */
+  background-color: red;
+  border-radius: 5px;
+}
+.goldview {
+  /*   width: 5vh;
+  height: 5vh; */
+  background-color: gold;
+  border-radius: 5px;
 }

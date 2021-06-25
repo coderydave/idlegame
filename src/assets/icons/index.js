@@ -7,6 +7,8 @@ import playIcon from "./play.svg";
 import tvIcon from "./tv.svg";
 import gemsIcon from "./gems.svg";
 import coinsIcon from "./coins.svg";
+import offlineIcon from "./offline.svg";
+import wifiIcon from "./wifi2.svg";
 
 export {
     upgradeIcon,
@@ -17,5 +19,7 @@ export {
     prestigeIcon,
     tvIcon,
     gemsIcon,
-    coinsIcon
+    coinsIcon,
+    wifiIcon,
+    offlineIcon
 }
