@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import {
   prestigeIcon,
   upgradeIcon,
@@ -14,7 +14,7 @@ import {
 
 import "./Navigation.style.scss";
 
-const Navigation = () => {
+const Navigation = memo(() => {
   const online = window.navigator.onLine;
 
   return (
@@ -40,8 +40,7 @@ const Navigation = () => {
           <img className="navicon-top" src={tvIcon} alt="tvIcon" />
         </button>
       </div>
-
-      {online && <img className="wifiIcon" src={wifiIcon} alt="wifiIcon" />}
+      {!online && <img className="wifiIcon" src={wifiIcon} alt="wifiIcon" />}
       <div className="navbar-bottom">
         <button
           onClick={() => console.log("upgradeIcon")}
@@ -84,6 +83,6 @@ const Navigation = () => {
       </div>
     </div>
   );
-};
+});
 
 export default Navigation;
