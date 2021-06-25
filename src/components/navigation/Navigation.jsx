@@ -9,10 +9,14 @@ import {
   tvIcon,
   coinsIcon,
   gemsIcon,
+  wifiIcon,
 } from "../../assets/icons";
+
 import "./Navigation.style.scss";
 
 const Navigation = () => {
+  const online = window.navigator.onLine;
+
   return (
     <div className="navigation container">
       <div className="navbar-top">
@@ -36,6 +40,8 @@ const Navigation = () => {
           <img className="navicon-top" src={tvIcon} alt="tvIcon" />
         </button>
       </div>
+
+      {online && <img className="wifiIcon" src={wifiIcon} alt="wifiIcon" />}
       <div className="navbar-bottom">
         <button
           onClick={() => console.log("upgradeIcon")}
